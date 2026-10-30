@@ -1,0 +1,24 @@
+### Hent alle album
+GET https://jsonplaceholder.typicode.com/albums
+
+### Hent album med id=6
+GET https://jsonplaceholder.typicode.com/albums/6
+
+### Legg til et nytt album
+POST https://jsonplaceholder.typicode.com/albums
+Content-type: application/json; charset=utf-8
+
+{
+  "userId": 1,
+  "title": "Rock n Roll"
+}
+
+### Endre title på album med id=6
+PUT https://jsonplaceholder.typicode.com/albums/6
+Content-type: application/json; charset=utf-8
+
+{
+  "userId": 1,
+  "title": "Julesanger"
+}
+
